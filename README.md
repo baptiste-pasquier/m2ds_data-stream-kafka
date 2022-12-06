@@ -1,4 +1,8 @@
+
+
 # m2ds_data_stream_kafka
+
+[![Build & Test](https://github.com/baptiste-pasquier/m2ds_data-stream-kafka/actions/workflows/main.yml/badge.svg)](https://github.com/baptiste-pasquier/m2ds_data-stream-kafka/actions/workflows/main.yml)
 
 ## Prerequities
 
