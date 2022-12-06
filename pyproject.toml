@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "m2ds_data_stream_kafka", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 tweepy = "^4.12.1"
 kafka-python = "^2.0.2"
 nltk = "^3.7"
@@ -16,10 +16,11 @@ colorama = "^0.4.6"
 
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^6.0.0"
+flake8 = "^5.0.4"
 black = {extras = ["jupyter"], version = "^22.10.0"}
-ipykernel = "^6.17.1"
+ipykernel = "~6.16.2"
 ipywidgets = ">=7.0,<8.0"
+pytest = "^7.2.0"
 
 [build-system]
 requires = ["poetry-core"]
