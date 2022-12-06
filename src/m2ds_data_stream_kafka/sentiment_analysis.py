@@ -1,9 +1,13 @@
 import re
 from pathlib import Path
 
+import nltk
 import unidecode
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+
+nltk.download("punkt")
+nltk.download("stopwords")
 
 
 def positive_negative_words(data_path):
@@ -15,7 +19,7 @@ def positive_negative_words(data_path):
         if language == "french":
             encoding = "utf8"
         else:
-            encoding = None
+            encoding = "windows-1252"
         with open(
             Path(data_path, f"positive-words-{language}.txt"), "r", encoding=encoding
         ) as f:
